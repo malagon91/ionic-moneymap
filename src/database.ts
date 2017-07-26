@@ -1,4 +1,4 @@
-import Dexie from 'dexie';
+import Dexie from '../node_modules/dexie/dist/dexie';
 //Archivo para manejar la DB
 export class TransactionAppDB extends Dexie {
   /*En esta linea declaro mi tabla vacia le paso la interfaz que va a usar
