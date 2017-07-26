@@ -1,0 +1,18 @@
+El almacenamiento sera local.
+
+usaremos IndexedDB => parecido a SQLite
+
+En esta pagina http://ionicons.com/ estan los nombres que le podemos dar
+a los iconos de IONIC para el ejemplo de transactions le cambie a cash
+Recomiendo usar estos porque cambian depende del SO que se use.
+
+
+///comandos
+*inicia el servidor
+ionic serve
+
+* Genera una pagina
+ionic g page name
+
+
+//////////END
