@@ -6,24 +6,29 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Add transaction</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Add transaction</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <ion-item >
+    <ion-item>
         <ion-label floating>Description</ion-label>
         <ion-input type="text" [(ngModel)]="model.title"></ion-input>
     </ion-item>
     <ion-item>
-          <ion-label floating>Amount</ion-label>
+        <ion-label floating>Amount</ion-label>
         <ion-input type="number" [(ngModel)]="model.amount"></ion-input>
     </ion-item>
+    <ion-item>
+        <ion-label>Save Location</ion-label>
+        <ion-toggle [(ngModel)]="showGeolocate" (ionChange)="getLocation()"></ion-toggle>
+    </ion-item>
+
     <div class="actions">
-        <button ion-button (click)="save()">Add</button>
+        <button ion-button (click)="save()" [disabled]="!shouldSend">Add</button>
     </div>
-    
+
 </ion-content>

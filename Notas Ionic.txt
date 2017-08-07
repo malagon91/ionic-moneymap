@@ -16,3 +16,23 @@ ionic g page name
 
 
 //////////END
+
+API AIzaSyAdZsc0zrj1lyedMc7qp4_nB1TcQpZsiyQ
+
+
+Corri este comando para agregar un dispositivo al proyecto
+ionic cordova platform add android
+
+inicio la emulacion
+ionic cordova emulate android
+
+instalo plugin geolocation
+ionic cordova plugin add cordova-plugin-geolocation
+aparte segun la doc baje el repo de npm para poder injectarlos en el app
+
+
+crea un nuevo provider
+ionic g provider geolocation.service
+
+
+ionic cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyAdZsc0zrj1lyedMc7qp4_nB1TcQpZsiyQ" --variable API_KEY_FOR_IOS="AIzaSyAdZsc0zrj1lyedMc7qp4_nB1TcQpZsiyQ"
